@@ -1,20 +1,17 @@
 # cordova-plugin-mock-location
 
-This is a cordova plugin to check enabled\disabled GPS imitations in android settings.
+This is a cordova plugin to check enabled\disabled GPS imitations in android settings. 
 
 ## Supported Platforms
 
-- Android
+- Android API all versions
 
 ## Installation
 
-Cordova remote build
-
-    <gap:plugin name="cordova-plugin-mock-location" source="npm" />
 
 Cordova local build
 
-    cordova plugin add https://github.com/ikoshik/cordova-plugin-mock-location.git
+    cordova plugin add https://github.com/spry-io/cordova-plugin-mock-location.git
 
 ## Usage
 
@@ -26,7 +23,7 @@ function onDeviceReady() {
 }
 
 function successCallback(result) {
-  console.log(result); // true - enabled, false - disabled
+  console.log(result); // isMock == true - enabled, false - disabled
 }
 
 function errorCallback(error) {
